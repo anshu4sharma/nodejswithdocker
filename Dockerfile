@@ -58,3 +58,11 @@ CMD [ "node","index" ]
 # docker ps to check all running container 
 
 # docker kill container_name or id
+
+#! deleting a image
+
+# check all images
+# sudo docker images
+
+# deleting docker image forcefully 
+# sudo docker image rm  35 -f
