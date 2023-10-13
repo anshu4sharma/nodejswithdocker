@@ -1,0 +1,12 @@
+version: '3'
+services:
+  reactwithdocker:
+    container_name: node_docker_container
+    build:
+      context: .
+      dockerfile: Dockerfile
+    ports:
+      - "3000:3000"
+    volumes:
+      - .:/home/nodeapp
+      - /home/nodeapp/node_modules
