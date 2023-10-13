@@ -66,3 +66,7 @@ CMD [ "node","index" ]
 
 # deleting docker image forcefully 
 # sudo docker image rm  35 -f
+
+#? docker logs imageid
+
+# to check all logs of docker container
