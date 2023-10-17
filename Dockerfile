@@ -1,11 +1,13 @@
 FROM node:latest
 
-COPY . /home/nodeapp/
-
 WORKDIR /home/nodeapp
+
+COPY package* .
+
+RUN npm i -g nodemon
 
 RUN npm install 
 
-RUN npm i -g nodemon
+COPY . .
 
 CMD ["nodemon", "index.js"]
